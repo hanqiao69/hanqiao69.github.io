@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	border: 0;
+	font-family: 'Roboto';
+	text-align: center;
+}
+
+#box1 {
+	width: 100%;
+	height: 500px;
+	background-color: #64FFDA;
+	opacity: 0.8;
+	text-align: center;
+}
+
+#text {
+	position: absolute;
+	top: 250px;
+	vertical-align: middle;
+	margin-left: 36%;
+	font-size: 60pt;
+}
+
+#box2 {
+	position: absolute;
+	top: 400px;
+	width: 100%;
+	height: 100px;
+}
+
+#avatar {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+}
+
+#box3 {
+	position: absolute;
+	top: 610px;
+}
