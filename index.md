@@ -9,9 +9,6 @@ navitems:
     name: Contact me :)
 ---
 
-We think hackathons should be about learning and meeting new people, so we’re here to make it happen. Read all about our initiatives, and join us for a new kind of mentoring experience!
-
-
 ## [Hi I'm Qiao](qiao)
 
 
