@@ -167,6 +167,25 @@ div.header {
     z-index: 1;
 }
 
+.header2 {
+    top:0;
+    background-color: #5a4557;
+    cursor: default;
+    background-image: url("meblur.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    margin: 0px 0px 0px 0px;
+    z-index: 1;
+}
+
+.header2 h1 {
+    z-index: 100;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
 .header h1 {
     position: relative;
     z-index: 100;
