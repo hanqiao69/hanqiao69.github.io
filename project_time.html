@@ -11,14 +11,18 @@
     <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+    <script src="utils.js"></script>
+    <script src="project_time.js"></script>
 		<!--<script src="jquery.sticky.js"></script>
 		<script> $(window).load(function(){ $("#nav").sticky({ topSpacing: 0 }); }); </script>-->
      <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"/> -->
  </head>
- <body>
+ <body onload="draw_graph()">
     <div class="header2">
         <h1>Circle of Time</h1>
         <br>
+        <canvas id="pie_chart" width="50%" height="50%"></canvas> 
         <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
         <script>
         // Initialize Firebase
@@ -31,17 +35,10 @@
             messagingSenderId: "qiao",
         };
         firebase.initializeApp(config);
-        </script>
+        </script> 
         <script>
-        var rootRef = new Firebase('https://qiaowebsite.firebaseio.com');
-        function readCurrent() {
-            // var rootRef = firebase.database();
-            rootRef.once('value').then(function(snapshot) {
-                var val = snapshot.child("Eating").val();
-                console.log(val);
-            });
-        }
-        readCurrent();
+        read_current();
+        draw_graph();
         </script>
     </div>
 </body>
