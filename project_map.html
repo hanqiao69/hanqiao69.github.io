@@ -4,71 +4,21 @@
     <title>Ciao Qiao</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Briana Vecchione's Website" />
+    <link rel="stylesheet" href="project_map.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
     <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<!--<script src="jquery.sticky.js"></script>
-		<script> $(window).load(function(){ $("#nav").sticky({ topSpacing: 0 }); }); </script>-->
-     <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"/> -->
+    <script src="project_map.js"></script>
+
  </head>
- <body>
+ <body onload="load_map()">
     <div class="header2">
         <h1>Footprints</h1>
         <br>
-        <div id="container" style="position: relative; width: 100%;"></div>
-        <script>
-        var map = new Datamap({
+        <div id="container"></div>
 
-        scope: 'world',
-         element: document.getElementById('container'),
-
-        projection: 'mercator',
-        height: 600,
-        width: 700,
-        fills: {
-          havebeen: 'red',
-          wanttogo: 'yellow',
-          havelived: 'orange'
-        },
-
-        
-        data: {
-          CHN: {fillKey: 'havelived' },     // China
-          HKG: {fillKey: 'havebeen' },     // HK
-          MAC: {fillKey: 'havebeen' },     // Macao
-          USA: {fillKey: 'havelived' },     // USA
-          KOR: {fillKey: 'wanttogo' },  // Korea
-          SGP: {fillKey: 'wanttogo' },  // Singapore
-          IND: {fillKey: 'wanttogo' },  // India
-          CAN: {fillKey: 'havebeen' },  // Canada
-          AUS: {fillKey: 'wanttogo' },  // Austraila
-          NZL: {fillKey: 'wanttogo' },  // New Zealand
-          JPN: {fillKey: 'havebeen' },     // Japan
-          AUT: {fillKey: 'havebeen' },     // Austria
-          BEL: {fillKey: 'havebeen' },     // Belgium
-          CHE: {fillKey: 'havebeen' },     // Switzerland
-          DEU: {fillKey: 'havebeen' },     // Germany
-          DNK: {fillKey: 'havebeen' },     // Denmark
-          ITA: {fillKey: 'havebeen' },     // Italy
-          SPN: {fillKey: 'wanttogo' },  // Spain
-          GRC: {fillKey: 'wanttogo' },  // Greece
-          FRA: {fillKey: 'havebeen' },     // France
-          NLD: {fillKey: 'havebeen' },     // Netherlands
-          NOR: {fillKey: 'havebeen' },     // Norway
-          SWE: {fillKey: 'havebeen' },     // Sweden
-          FIN: {fillKey: 'havebeen' },     // Finnland
-          ISL: {fillKey: 'havebeen' },     // Iceland
-          GBR: {fillKey: 'wanttogo' },  // UK
-          BRA: {fillKey: 'wanttogo' },  // Brazil
-          CRI: {fillKey: 'wanttogo' },  // Costa Rica
-          PRI: {fillKey: 'wanttogo' },  // Puerto Reco
-          ZAF: {fillKey: 'wanttogo' },  // South Africa
-          QAT: {fillKey: 'havebeen' },     // Qatar
-        }
-      });
-        </script>
 </body>
 </html>
